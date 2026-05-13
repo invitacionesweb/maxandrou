@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <meta name="format-detection" content="telephone=no">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+
+   
+    <title>MAX AND ROU</title>
+</head>
+<body>
+    <header class="parallax" id="parallax">
+        <div class="frenteflores">
+ 
+        </div>
+ 
+
+            <img class="arrowdoble" src="./imgs/arrow.png" alt="">
+
+
+     </header>
+ 
+     <div class="audiodiv">
+          <audio id="myAudio" preload="auto">
+  <source src="./bridgerton.mp3" type="audio/mpeg">
+</audio>
+         <div id="playPauseBtn" class="play">
+             <img src="./imgs/notamusical.png" alt="Icono de música">
+         </div>
+     </div>
+   
+
+  
+     <div class="contador">
+     
+        <div class="bloque">
+          <div id="dias" class="numero"></div>
+          <div class="etiqueta">Días</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="horas" class="numero"></div>
+          <div class="etiqueta">horas</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="minutos" class="numero"></div>
+          <div class="etiqueta">minutos</div>
+        </div>
+    
+        <div class="bloque">
+          <div id="segundos" class="numero"></div>
+          <div class="etiqueta">segundos</div>
+        </div>
+    </div>
+    <div class="lovestory">
+        <div class="lovestorybox">
+          <!--  <h2  data-aos="fade-up" >NUESTRA HISTORIA</h2>-->
+            <p  data-aos="fade-up" >
+Queremos compartir este día especial con vos.
+
+         
+            </p>
+           
+                
+            
+        </div>
+    </div>  
+    <div class="galeria1">
+        <img data-aos="fade-up"   class="f1" src="./novios/1.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/1.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/1.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/1.png" alt="FOTO">
+    </div> 
+    <div class="ubicacion">
+        <!--
+      <div class="ubicacion-bloque">
+            <img   data-aos="fade-up"  class="icon"   src="./imgs/iglesia.png" alt="fiesta">
+            <h2  data-aos="fade-up"  >CEREMONIA</h2>
+            <br>
+            <p  data-aos="fade-up"  ><strong>21:30 hs - Parroquia Nuestra Señora de Lourdes. <br>
+                xxxxx xxxxxx. </strong>  </p>
+            <a  data-aos="fade-up" target="_blank" class="boton" href="google.com/maps?sca_esv=816ab6700b6066fb&rlz=1C5BAPC_enAR1171AR1174&output=search&q=Estancia+Ricardo+Francisco&source=lnms&fbs=ADc_l-bp7S3LDYPP69uYqjzxk2Y3G0HOMRDkqCJAYnuLpz5POtrwvVo9roG__mzXvRjBzB8AOmylH74KNbw9lfcEDrwqAu0lpDNy-UGxHp2Iq6cNwe43Qpajf2fQkk_0EgXMcHUcxxkpoimFiWPjZuSLLGAoiO6cZYiNEfIksU9GskMp7ggzfSAMMEnyzuNyQW1WsSrqsjMsXtL3k06QmLJsBrBuD_dAeQ&entry=mc&ved=1t:200715&ictx=111">CÓMO LLEGAR</a>
+        </div>-->
+        <div class="ubicacion-bloque">
+            <img   data-aos="fade-up"  class="icon"   src="./imgs/copas.png" alt="fiesta">
+            <h2  data-aos="fade-up"  >CEREMONIA Y FIESTA</h2>
+            <br>
+            <p  data-aos="fade-up"  ><strong>17:30 hs - Estancia Ricardo Francisco.
+               </strong> </p>
+            <a  data-aos="fade-up" target="_blank" class="boton" href="google.com/maps?sca_esv=816ab6700b6066fb&rlz=1C5BAPC_enAR1171AR1174&output=search&q=Estancia+Ricardo+Francisco&source=lnms&fbs=ADc_l-bp7S3LDYPP69uYqjzxk2Y3G0HOMRDkqCJAYnuLpz5POtrwvVo9roG__mzXvRjBzB8AOmylH74KNbw9lfcEDrwqAu0lpDNy-UGxHp2Iq6cNwe43Qpajf2fQkk_0EgXMcHUcxxkpoimFiWPjZuSLLGAoiO6cZYiNEfIksU9GskMp7ggzfSAMMEnyzuNyQW1WsSrqsjMsXtL3k06QmLJsBrBuD_dAeQ&entry=mc&ved=1t:200715&ictx=111">CÓMO LLEGAR</a>
+            </div>    
+    </div>   
+    <div class="galeria2">
+        <img data-aos="fade-up"   class="f1" src="./novios/2.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f1" src="./novios/3.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f4" src="./novios/2.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f4" src="./novios/3.png" alt="FOTO">
+    </div> 
+   <!--
+     <div class="timeline">
+    
+
+        <div class="iconos">
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/tulugar.png" alt="icono">
+                <p data-aos="fade-up" > 20:00 Hs</p>
+                <p data-aos="fade-up" >Toma tu lugar</p>
+            </div>
+            <div   class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/anillos.png" alt="icono">
+                <p data-aos="fade-up" >20:30 Hs</p>
+                <p data-aos="fade-up" >Ceremonia</p>
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/copas.png" alt="icono">
+                <p data-aos="fade-up">21:30 Hs</p>
+                <p data-aos="fade-up">Brindis</p>
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/cena.png" alt="icono">
+                <p data-aos="fade-up">22:00 Hs</p>
+                <p data-aos="fade-up">1er plato</p>
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/fiesta.png" alt="icono">
+                <p data-aos="fade-up"  >02:00 Hs</p>
+                <p data-aos="fade-up"  >Fiesta</p>
+            </div>
+             <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./imgs/vueltaacasa.png" alt="icono">
+                <p data-aos="fade-up"  >05:00 Hs</p>
+                <p data-aos="fade-up"  >Vuelta a casa</p>
+            </div>
+        </div>
+    </div>-->
+
+    <div   class="dresscode">
+        <img  data-aos="fade-up"  class="icon"  src="./imgs/dresscode.png" alt="fiesta">
+        <h2  data-aos="fade-up"  >DRESS CODE - ELEGANTE</h2>
+        <p  data-aos="fade-up" >La celebración se realizará en un entorno al aire libre, en el campo. <br> ✨ Apostá por looks elegantes, acordes a la ocasión.
+<br>
+🤍 El blanco queda reservado para la novia.</p>
+    </div>
+
+    
+
+    <div class="ubicacion" >
+        <br>
+        <div  class="ubicacion-bloque">
+            <img data-aos="fade-up"  class="icon" src="./imgs/instagram.png" alt="instagram">
+            <h2  data-aos="fade-up" >RECUERDOS</h2>
+            <p  data-aos="fade-up" >¡Queremos revivir cada momento! 📸✨
+                Compartí las fotos y videos de nuestra boda en la siguiente carpeta.</p>
+            <a  data-aos="fade-up" target="_blank"  class="boton" href="#">RECUERDOS</a>
+        </div>
+        <div class="ubicacion-bloque">
+            <img  data-aos="fade-up"  class="icon"  src="./imgs/tulugar.png" alt="playlist">
+            <h2  data-aos="fade-up" >HOSPEDAJE</h2>
+            <p  data-aos="fade-up" >Sabemos que muchos viajan para acompañarnos, por eso te dejamos algunas opciones de alojamiento cerca de la estancia.</p>
+            <a  data-aos="fade-up" target="_blank" class="boton" href="#">  RECOMENDACIONES  </a>
+        </div>
+        <br>
+    </div>
+    <div class="galeria1">
+        <img data-aos="fade-up"   class="f1" src="./novios/6.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/6.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/6.png" alt="FOTO">
+        <img data-aos="fade-up"   class="f2" src="./novios/6.png" alt="FOTO">
+    </div> 
+    <div class="caja">
+        <div  class="ubicacion-bloque dos" >
+            <img  data-aos="fade-up"  class="icon"  src="/imgs/regalo.png" alt="giftcard">
+            <h2  data-aos="fade-up" >MESA DE REGALOS</h2>
+            <p  data-aos="fade-up" >
+                Tu presencia es lo más importante, pero si deseas hacernos un regalo podrias ayudarnos con nuestra luna de miel.
+              </p>
+            
+           <br>
+            <a  data-aos="fade-up"  class="boton" onclick="copyToClipboard('MAXYROU')" >ALIAS PESOS</a>
+            <a  data-aos="fade-up"  class="boton" onclick="copyToClipboard('4530000800013917671595')">CBU PESOS</a> <br>
+           <br><br> <a  data-aos="fade-up"  class="boton" onclick="copyToClipboard('MAXYROU.USD')" >ALIAS DÓLARES</a>
+            <a  data-aos="fade-up"  class="boton" onclick="copyToClipboard('4530000800026738582670')">CBU DÓLARES</a> <br>
+      
+            <br>
+            <p  data-aos="fade-up" >Hace clic para copiar los datos de nuestra cuenta.
+               <br> Titular:Rocio Rodríguez Saa</p>
+        </div>
+    </div>
+ <div class="forms">
+      <img  data-aos="fade-up"  class="icon"  src="/imgs/rsvp.png" alt="giftcard">
+
+        <form name="asistenciaform" method="POST" action="https://script.google.com/macros/s/AKfycbx3fhqBja8SjRQnNOmkE4S9b7-7JVzBfg5fwDyUbyXkqoyBobLn4i3AYh2admxaiYQm/exec" class="formulario">
+
+  <label data-aos="fade-up" class="formtitle">¿VENIS?</label>
+
+  <div class="radio-group">
+    <label class="radio-option">
+      <input type="radio" name="ASISTENCIA" value="sí" required />
+      <span>Sí</span>
+    </label>
+    <label class="radio-option">
+      <input type="radio" name="ASISTENCIA" value="no" />
+      <span>No</span>
+    </label>
+  </div>
+
+  <input type="text" name="NOMBRE" placeholder="Nombre" required />
+  <input type="text" name="APELLIDO" placeholder="Apellido" required />
+  <input type="text" name="DIETA" placeholder="Vegano / vegetariano / celíaco / nada" required />
+  <!--<textarea name="CANCION" placeholder="Recomendale una canción al DJ 🎶"></textarea>>-->
+
+  <button type="submit" class="boton">ENVIAR</button>
+</form>
+
+    <p data-aos="fade-up">Recordá completar un formulario por persona. <br> Hacelo antes del 01 de Septiembre.</p>
+  </div>
+    <div class="end">
+        <div class="end-names">
+          <img  data-aos="fade-in"  src="./imgs/endnames.png" alt="">
+        </div>
+      </div>
+      <footer>
+        <div class="contenido">
+         <div>
+           <img src="./imgs/logosiquiero.png" alt="icono si quiero">
+             <p>Hecho con &hearts; <br>
+             &#169 <b>Si,quiero!</b> - invitaciones inteligentes.
+             <br> Todos los derechos reservados.</p>
+         </div>
+            
+         <div class="contenido-list">
+             <ul>
+                 <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                 <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                 <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+               </ul>
+         </div>
+        </div>
+        
+    </footer>
+
+    
+<SCript src="./form.js"></SCript>
+<script src="./countdwon.js"></script>
+<script src="./reproductor.js"></script>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("myAudio");
+
+    // Escucha el primer scroll
+    const playOnScroll = () => {
+      audio.play().catch(e => {
+        console.warn("El navegador bloqueó la reproducción automática", e);
+      });
+      document.removeEventListener("scroll", playOnScroll); // Se ejecuta solo una vez
+    };
+
+    document.addEventListener("scroll", playOnScroll);
+  });
+</script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+    <script>
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.parentElement;
+        item.classList.toggle("active");
+
+        // Cierra otros ítems si querés que solo se abra uno a la vez:
+        headers.forEach((otherHeader) => {
+          const otherItem = otherHeader.parentElement;
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+     
+</body>
+</html>
