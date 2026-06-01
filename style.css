@@ -424,7 +424,22 @@ label .grupo-opciones {
 }
 
 .radio-option input[type="radio"] {
-  accent-color: var(--color-terciario); /* Cambia el color del círculo si el navegador lo soporta */
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  border: 2px solid var(--color-principal);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.radio-option input[type="radio"]:checked {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
 }
 .etiqueta {
     font-family: var(--font-secundaria);
